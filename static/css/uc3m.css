@@ -33,3 +33,12 @@ nav.nav-colophon li {
     display: inline;
     padding-left: 20px;
 }
+
+.view-login .container {
+    border-left: 1px solid #000E78;
+    border-right: 1px solid #000E78;
+}
+.view-login .introduction {
+    border-left: 1px solid #000E78;
+    border-right: 1px solid #000E78;
+}
