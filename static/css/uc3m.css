@@ -48,3 +48,18 @@ nav.nav-colophon li {
 .view-login .wrapper-footer footer {
     width: 99%;
 }
+
+.home > header .title {
+    padding: 20px 130px;
+}
+.home > header .outer-wrapper {
+    padding-top: 150px;
+}
+
+.content-wrapper {
+    padding-bottom: 0px;
+}
+
+.wrapper-footer {
+   padding: 5px 10px 5px;
+}
