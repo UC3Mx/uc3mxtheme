@@ -1,0 +1,31 @@
+## mako
+<%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
+<%! from datetime import datetime %>
+<%! from pytz import UTC %>
+
+<div class="wrapper-footer">
+  <footer>
+    <div class="colophon">
+      <nav class="nav-colophon">
+        <ol>
+          <li><a href="${reverse('about')}">Acerca de</a></li>
+          <li><a href="${reverse('contact')}">Contacto</a></li>
+        </ol>
+      </nav>
+    </div>
+    <div class="references">
+      <span>Creado con <a href="http://code.edx.org">OpenEdX</a>.</span>
+    </div>
+  </footer>
+<div class="pie">
+    <div class="pie-iz">
+      <img src="${static.url('themes/uc3mx/images/pie_izquierda.png')}">
+    </div>
+    <div class="pie-de">
+      <img src="${static.url('themes/uc3mx/images/pie_derecha.png')}">
+    </div>
+</div> 
+</div>
+
+<link rel="stylesheet" type="text/css" href="${static.url('themes/uc3mx/css/uc3m.css')}" />

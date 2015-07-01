@@ -1,0 +1,35 @@
+.pie {
+  background-color:rgb(0,14,120);width:101%;margin-left:-10px;
+  height:70px;
+}
+.uc3m-header{
+  background-color:rgb(0,14,120);
+}
+.pie-de{
+  background-color:rgb(0,14,120);
+  float:right;
+}
+.pie-iz{
+  background-color:rgb(0,14,120);
+  float:left;
+  width:300px;
+}
+.wrapper-course-material ol.course-tabs li a:hover {
+  background-color: #8f7857;
+  color: #ffffff;
+}
+
+body.view-incourse .wrapper-footer {
+  margin-top: -10px;
+  padding-right: 0px;
+  padding-left: 10px;
+}
+
+footer {
+  margin-top: 5px;
+}
+
+nav.nav-colophon li {
+    display: inline;
+    padding-left: 20px;
+}
