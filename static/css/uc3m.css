@@ -37,6 +37,7 @@ nav.nav-colophon li {
 .view-login .container {
     border-left: 1px solid #000E78;
     border-right: 1px solid #000E78;
+    width: 962px;
 }
 .view-login .introduction {
     border-left: 1px solid #000E78;
