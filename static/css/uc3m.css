@@ -51,13 +51,14 @@ nav.nav-colophon li {
 
 .home > header .title {
     padding: 20px 130px;
+    margin-right: 0px;
 }
 .home > header .outer-wrapper {
     padding-top: 150px;
 }
 
 .content-wrapper {
-    padding-bottom: 0px;
+    padding-bottom: 25px;
 }
 
 .wrapper-footer {
