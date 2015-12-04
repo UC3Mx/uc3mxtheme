@@ -60,6 +60,11 @@ from microsite_configuration import microsite
         -->
       % endif
     </div>
+    <a href="http://www.uc3m.es/ss/Satellite/UC3MInstitucional/es/TextoMixta/1371210750740/" style="text-decoration: none;">
+    <div style="background:rgba(0,0,0,0.6); min-height:100px;diplay:float;font-size:4em;color: #FFF; text-align: center;">
+         <div style="padding-top:40px;vertical-align:bottom;min-height:80px; "> <b>S</b>mall <b>P</b>rivate <b>O</b>nline <b>C</b>ourses</div>
+</div>
+    </a>
 
   </header>
   <section class="courses-container">
@@ -111,12 +116,34 @@ from microsite_configuration import microsite
     <script src="${static.url('themes/uc3mxtheme/js/jquery.backstretch.min.js')}"></script>
 
   <script>
-     $('#bg-body').backstretch([
+     
+
+      var images=[
        "${static.url('themes/uc3mxtheme/images/slider1.jpg')}",
        "${static.url('themes/uc3mxtheme/images/slider2.jpg')}",
        "${static.url('themes/uc3mxtheme/images/slider3.jpg')}",
-       "${static.url('themes/uc3mxtheme/images/slider4.jpg')}"
-       ], {duration: 8000, fade: 850});
+       "${static.url('themes/uc3mxtheme/images/slider4.jpg')}",
+       "${static.url('themes/uc3mxtheme/images/slider5.jpg')}"
+       ];
+
+   
+      var index = 0,oldIndex;
+      index = Math.floor((Math.random()*images.length));
+      $('#bg-body').backstretch(images[index], {
+            duration: 4000,
+            fade: 850
+       });
+
+
+      setInterval(function() {
+        oldIndex = index;
+        while (oldIndex == index) {
+            index = Math.floor((Math.random()*images.length));
+        }
+        $('#bg-body').backstretch(images[index]);
+      }, 7500);
+ 
+
   </script>
 
 </%block>

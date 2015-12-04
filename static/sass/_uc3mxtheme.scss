@@ -30,7 +30,7 @@ $gray: #3f3f3f; //Main Text Color
 $gray-75: #e4ed38; //Lighter Text Color
 
 $gray-3: #e9e9e9; //Block/Course BG Color
-$gray-2: #88afd5;  //secciones fondo
+$gray-2: #c2bab4;  //secciones fondo
 $gray-1: #fffbf7; //Main BG Color
 $white: #ffffff;
 
@@ -62,7 +62,8 @@ $container-bg: $white;
 $login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg: transparentize(lighten($secondary, 18.5%), .25);
+//$header-bg: transparentize(lighten($secondary, 18.5%), .25);
+$header-bg: #E7DFD4;
 $courseware-header-image: none;
 $courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
 $footer-bg: $secondary-25;
