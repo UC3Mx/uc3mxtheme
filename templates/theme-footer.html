@@ -7,15 +7,18 @@
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
+    <div style="display: block; position:relative;float:right; border-left: 1px #A09576 solid; padding-left: 4px; margin-left:4px;"> 
+      <img src="${static.url('themes/uc3mxtheme/images/logomid.png')}" height="90px">
+    </div>
       <nav class="nav-colophon">
         <ol>
-          <li><a href="${reverse('about')}">Acerca de</a></li>
-          <li><a href="${reverse('contact')}">Contacto</a></li>
+          <li><img src="${static.url('themes/uc3mxtheme/images/about.png')}">&nbsp;<a href="${reverse('about')}">Acerca de</a></li>
+          <li><img src="${static.url('themes/uc3mxtheme/images/contacto.png')}">&nbsp;<a href="${reverse('contact')}">Contacto</a></li>
         </ol>
       </nav>
     </div>
     <div class="references">
-      <span>Creado con <a href="http://code.edx.org">OpenEdX</a>.</span><br>
+      <span>Desarrollado con <a href="http://code.edx.org"><img src="${static.url('themes/uc3mxtheme/images/logo-openedx.png')}" height="22px"></a></span><br>
       <span style="font-size:0.6em;"> Servicio de Informática y Comunicaciones -  Multimedia e Innovación Docente</span>
     </div>
   </footer>
